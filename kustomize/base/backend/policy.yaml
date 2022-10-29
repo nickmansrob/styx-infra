@@ -1,0 +1,15 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: styx-backend
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: styx-backend
+  filterTags:
+    pattern: '^sha-(?P<ts>.*)-.+'
+    extract: '$ts'
+  policy:
+    numerical:
+      order: asc
+      
