@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: default
 resources:
 - ../../base/backend
+- ../../base/image/backend
 images:
 - name: nickmansrob1205/peno3
   newName: nickmansrob1205/peno3 # {"$imagepolicy": "flux-system:peno3:name"}

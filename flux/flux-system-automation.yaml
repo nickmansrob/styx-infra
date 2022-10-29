@@ -20,7 +20,3 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  update:
-    path: ./flux
-    strategy: Setters
-
