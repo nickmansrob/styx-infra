@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: styx-backend
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: styx-backend
+  template:
+    metadata:
+      labels:
+        app: styx-backend
+    spec:
+      containers:
+        - name: styx-backend
+          image: hub.docker.com/repository/docker/nickmansrob1205/peno3:sha-2-4da73d75d2dcd61863d6813f0e0d702c3e35868b
+          imagePullSecrets:
+          - name: backend-credentials
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
