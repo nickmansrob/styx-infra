@@ -1,11 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: default
 resources:
 - ../../base/backend
 - ../../base/image/backend
 images:
-- name: nickmansrob1205/peno3
-  newName: nickmansrob1205/peno3 # {"$imagepolicy": "flux-system:peno3:name"}
+- name: docker.io/nickmansrob1205/peno3
+  newName: docker.io/nickmansrob1205/peno3 # {"$imagepolicy": "flux-system:peno3:name"}
   newTag: sha-6-87cd3148d093e648c598c608953c37e3b9db9141 # {"$imagepolicy": "flux-system:peno3:tag"}
   
