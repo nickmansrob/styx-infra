@@ -16,7 +16,7 @@ spec:
         - name: backend-credentials
       containers:
         - name: styx-backend
-          image: nickmansrob1205/peno3:sha-5-665229e91ff7dc29d543c2584f61ef35755dbc83
+          image: nickmansrob1205/peno3:sha-6-87cd3148d093e648c598c608953c37e3b9db9141
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
