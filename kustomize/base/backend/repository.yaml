@@ -5,7 +5,7 @@ metadata:
   name: styx-backend
   namespace: flux-system
 spec:
-  image: nickmansrob1205/peno3
+  image: docker.io/nickmansrob1205/peno3
   interval: 1m0s
   secretRef:
     name: backend-credentials
