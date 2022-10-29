@@ -18,6 +18,9 @@ spec:
         - name: styx-backend
           image: docker.io/nickmansrob1205/peno3
           imagePullPolicy: IfNotPresent
+          args:
+            - start-server
+            - backend
           ports:
             - name: http
               containerPort: 3000

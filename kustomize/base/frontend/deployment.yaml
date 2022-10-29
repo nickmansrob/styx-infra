@@ -18,6 +18,9 @@ spec:
         - name: styx-frontend
           image: docker.io/robnickmans/peno3
           imagePullPolicy: IfNotPresent
+          args:
+            - start-server
+            - frontend
           ports:
             - name: http
               containerPort: 80
