@@ -12,11 +12,11 @@ spec:
       labels:
         app: styx-backend
     spec:
+      imagePullSecrets:
+        - name: backend-credentials
       containers:
         - name: styx-backend
           image: nickmansrob1205/peno3:sha-2-4da73d75d2dcd61863d6813f0e0d702c3e35868b
-          imagePullSecrets:
-          - name: backend-credentials
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
