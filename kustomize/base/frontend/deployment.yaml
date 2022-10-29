@@ -16,7 +16,7 @@ spec:
         - name: frontend-credentials
       containers:
         - name: styx-frontend
-          image: robnickmans/peno3
+          image: docker.io/robnickmans/peno3
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

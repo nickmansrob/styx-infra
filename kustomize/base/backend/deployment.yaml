@@ -16,7 +16,7 @@ spec:
         - name: backend-credentials
       containers:
         - name: styx-backend
-          image: nickmansrob1205/peno3
+          image: docker.io/nickmansrob1205/peno3
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
