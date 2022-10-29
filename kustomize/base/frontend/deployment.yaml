@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: styx-frontend
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: styx-frontend
+  template:
+    metadata:
+      labels:
+        app: styx-frontend
+    spec:
+      imagePullSecrets:
+        - name: frontend-credentials
+      containers:
+        - name: styx-frontend
+          image: robnickmans/peno3
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP

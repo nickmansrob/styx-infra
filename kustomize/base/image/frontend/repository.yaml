@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: styx-frontend
+  namespace: flux-system
+spec:
+  image: docker.io/robnickmans/peno3
+  interval: 1m0s
+  secretRef:
+    name: frontend-credentials
+    
