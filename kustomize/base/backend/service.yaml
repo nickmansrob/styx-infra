@@ -3,9 +3,12 @@ kind: Service
 metadata:
   name: backend-api
 spec:
+  type: NodePort
   selector:
     app: styx-backend
   ports:
     - name: http
       protocol: TCP
       port: 3000
+      nodePort: 30080
+      targetPort: 3000
