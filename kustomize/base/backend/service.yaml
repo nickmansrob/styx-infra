@@ -7,8 +7,8 @@ spec:
   selector:
     app: styx-backend
   ports:
-    - name: http
+    - name: https
       protocol: TCP
-      port: 3000
+      port: 443
       nodePort: 30080
       targetPort: 3000
