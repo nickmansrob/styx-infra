@@ -6,7 +6,8 @@ resources:
   - pvc.yaml
   - service.yaml
 configMapGenerator:
-  - literals:
+  - name: backend-config
+    literals:
     - DATABASE_URL="file:./prod.db"
 generatorOptions:
   disableNameSuffixHash: true
