@@ -18,7 +18,7 @@ spec:
         - name: styx-backend
           image: docker.io/nickmansrob1205/peno3
           volumeMounts:
-            - mountPath: /usr/src/app/src/data
+            - mountPath: /usr/src/app/prisma
               name: styx-backend-volume
           imagePullPolicy: IfNotPresent
           envFrom:
