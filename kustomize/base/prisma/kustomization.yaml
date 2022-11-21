@@ -7,7 +7,7 @@ resources:
 configMapGenerator:
   - name: prisma-config
     literals:
-    - DATABASE_URL="file:./prod.db"
+    - DATABASE_URL="file:./database/prod.db"
 generatorOptions:
   disableNameSuffixHash: true
   

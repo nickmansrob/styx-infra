@@ -8,7 +8,7 @@ resources:
 configMapGenerator:
   - name: backend-config
     literals:
-    - DATABASE_URL="file:./prod.db"
+    - DATABASE_URL="file:./database/prod.db"
 generatorOptions:
   disableNameSuffixHash: true
   
