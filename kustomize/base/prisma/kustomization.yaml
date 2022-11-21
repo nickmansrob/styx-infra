@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: default
 resources:
   - deployment.yaml
-  - pvc.yaml
   - service.yaml
 configMapGenerator:
   - name: prisma-config
