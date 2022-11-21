@@ -21,6 +21,9 @@ spec:
             - mountPath: /usr/src/app/src/data
               name: styx-backend-volume
           imagePullPolicy: IfNotPresent
+          envFrom:
+          - configMapRef:
+              name: prisma-config
           args:
             - start-server
             - prisma
