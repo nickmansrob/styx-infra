@@ -9,7 +9,8 @@ configMapGenerator:
   - name: backend-config
     literals:
     - DATABASE_URL="file:./database/prod.db"
-    - JWT_MAC_SECRET=gWXINZIg8c95S29PJZzkHIUdfOK3dMz98ZsHOhKqcuBRHfFfRr8hEGmHgLXzTo9fZscJaAYiaJHk4jZzCgFhYViK0hul0DDC35vjQGrP66JAwIX7vka3MfHc5qP3g0qBCN4NLW5Koe8f95GGv7g9kxjpRhj8pp6ZoynRflI7WKf6rbBGchEcDIJpRa6mC2nX5iPXToKwL1TJ1rbGef6sd6VwShpRVtxhqa1Nalg3IouR43TcgPqg2Z7wOU9emw6q
+    - JWT_FRONTEND=BNPZFR26krtjPNYxDg1S6HZ4p9JzwwFQKnHLbVdfYCwu3dtmFcx5F2VQ4YR35sTXk1V1P2NRvzT28sWBY2kcpg5HehJj73pA
+    - JWT_PYTHON=s9pXejNNUDyUEsSjXrFFMbJdNZm6uzfq9aymgkajKcUaccnQMaBdmqyb4FA859X8J2nMYN8TFHs2vFE1yYsAyVzWYFjHuVtM
 generatorOptions:
   disableNameSuffixHash: true
   
