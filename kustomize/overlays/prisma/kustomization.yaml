@@ -5,4 +5,4 @@ resources:
 images:
 - name: docker.io/nickmansrob1205/peno3
   newName: docker.io/nickmansrob1205/peno3 # {"$imagepolicy": "flux-system:styx-backend:name"}
-  newTag: sha-64-fccf1128876e04374cf46c6944d999631c2b70b6 # {"$imagepolicy": "flux-system:styx-backend:tag"}
+  newTag: sha-65-8f89a0b4600d87e4c9daf5ab032e5f817911e17a # {"$imagepolicy": "flux-system:styx-backend:tag"}
