@@ -20,9 +20,13 @@ spec:
           volumeMounts:
             - mountPath: /usr/src/app/prisma/database
               name: styx-backend-volume
+            - name: zoneinfo
+              mountPath: /etc/localtime
+              subPath: Europe/Brussels
+              readOnly: true
           imagePullPolicy: IfNotPresent
           envFrom:
-          - configMapRef:
+            - configMapRef:
               name: prisma-config
           args:
             - start-server
@@ -35,3 +39,6 @@ spec:
         - name: styx-backend-volume
           persistentVolumeClaim:
             claimName: backend-pvc
+        - name: zoneinfo
+          hostPath:
+          path: /usr/share/zoneinfo

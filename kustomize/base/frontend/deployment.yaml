@@ -25,3 +25,12 @@ spec:
             - name: http
               containerPort: 3000
               protocol: TCP
+          volumeMounts:
+          - name: zoneinfo
+            mountPath: /etc/localtime
+            subPath: Europe/Amsterdam
+            readOnly: true
+      volumes:
+      - name: zoneinfo
+        hostPath:
+        path: /usr/share/zoneinfo
