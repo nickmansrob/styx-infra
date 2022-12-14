@@ -27,7 +27,7 @@ spec:
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:
-              name: prisma-config
+                name: prisma-config
           args:
             - start-server
             - prisma

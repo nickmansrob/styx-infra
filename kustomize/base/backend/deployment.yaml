@@ -27,7 +27,7 @@ spec:
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:
-              name: backend-config
+                name: backend-config
           args:
             - start-server
             - backend
